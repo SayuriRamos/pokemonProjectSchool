@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" maxHeight="560.0" maxWidth="800.0" minHeight="560.0" minWidth="800.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewControllers.FightPantalla">
+   <children>
+      <Group fx:id="beachBackG" layoutX="-1.0" visible="false">
+         <children>
+            <ImageView fitHeight="566.0" fitWidth="807.0">
+               <image>
+                  <Image url="@../images/Background/beachFight.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="forestBackG" visible="false">
+         <children>
+            <ImageView fitHeight="574.0" fitWidth="808.0" layoutX="1.0" layoutY="-13.0">
+               <image>
+                  <Image url="@../images/Background/forestFight.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="jungleBackG" layoutX="-5.0" visible="false">
+         <children>
+            <ImageView fitHeight="560.0" fitWidth="816.0">
+               <image>
+                  <Image url="@../images/Background/jungleFight.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="dessertBackG" layoutX="-4.0" layoutY="-4.0" visible="false">
+         <children>
+            <ImageView fitHeight="574.0" fitWidth="816.0">
+               <image>
+                  <Image url="@../images/Background/DesertFight.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fx:id="oponentViewImage" fitHeight="150.0" fitWidth="200.0" layoutX="466.0" layoutY="174.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="atacarButton" layoutX="511.0" layoutY="425.0" mnemonicParsing="false" onAction="#atacarButton" prefHeight="60.0" prefWidth="122.0" style="-fx-background-color: coral;" text="ATTACK">
+         <font>
+            <Font name="Consolas Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="huirButton" layoutX="645.0" layoutY="425.0" mnemonicParsing="false" onAction="#huirButton" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: #16814b;" text="RUN" textFill="#aeffd7">
+         <font>
+            <Font name="Consolas Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="194.0" layoutY="73.0" text="Life" textFill="#08282b">
+         <font>
+            <Font name="Consolas" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="meViewImage" fitHeight="190.0" fitWidth="215.0" layoutX="35.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="meNomAtaqueTextField" editable="false" layoutX="297.0" layoutY="455.0" style="-fx-background-color: #6AF096;" />
+      <TextField fx:id="nomAtaqueTextField" editable="false" layoutX="554.0" layoutY="103.0" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #6AF096;" />
+      <Label layoutX="307.0" layoutY="427.0" text="Ability Used" textFill="#74b788">
+         <font>
+            <Font name="Consolas" size="17.0" />
+         </font></Label>
+      <Label layoutX="554.0" layoutY="76.0" text="Ability Used" textFill="#08282b">
+         <font>
+            <Font name="Consolas" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="251.0" text="Life" textFill="#08282b">
+         <font>
+            <Font name="Consolas" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="meNameTextField" alignment="CENTER_RIGHT" layoutX="-20.0" layoutY="535.0" prefHeight="22.0" prefWidth="200.0" style="-fx-background-color: #08282b;" text="name" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameOpponent" layoutX="631.0" layoutY="336.0" prefHeight="23.0" prefWidth="171.0" style="-fx-background-color: #08282b;" text="NAME" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="17.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="lifeBarMe" layoutX="33.0" layoutY="298.0" prefWidth="200.0" progress="1.0" style=" -fx-accent: green;" />
+      <ProgressBar fx:id="lifeBarOpponent" layoutX="292.0" layoutY="88.0" prefWidth="200.0" progress="1.0" style="-fx-accent: orange;" />
+      <Button fx:id="trowPokeballMain" layoutX="645.0" layoutY="476.0" mnemonicParsing="false" onAction="#trowPokeball" prefHeight="60.0" prefWidth="122.0" style="-fx-background-color: #FF9832;" text="Throw Pokeball" textAlignment="CENTER" textFill="#160e08" wrapText="true">
+         <font>
+            <Font name="Consolas Bold" size="17.0" />
+         </font>
+      </Button>
+      <Group fx:id="tieGroup" layoutX="44.0" layoutY="177.0" visible="false">
+         <children>
+            <TextField editable="false" prefHeight="224.0" prefWidth="707.0" style="-fx-background-color: #7737E4;" text="BOTH POKEMON FAINTED, IT'S A TIE">
+               <font>
+                  <Font name="Consolas Bold Italic" size="37.0" />
+               </font>
+            </TextField>
+            <Button fx:id="okTieButton" layoutX="643.0" layoutY="187.0" mnemonicParsing="false" onAction="#okButton" prefHeight="25.0" prefWidth="50.0" text="OK" />
+         </children>
+      </Group>
+      <Group fx:id="lostGroup" layoutX="82.0" layoutY="143.0" visible="false">
+         <children>
+            <TextField editable="false" layoutX="-21.0" layoutY="22.0" prefHeight="224.0" prefWidth="707.0" style="-fx-background-color: #F5A823;" text="YOU LOST, YOUR POKEMON FAINTED ">
+               <font>
+                  <Font name="Consolas Bold Italic" size="37.0" />
+               </font>
+            </TextField>
+            <Button fx:id="okLostButton" layoutX="622.0" layoutY="207.0" mnemonicParsing="false" onAction="#okButton" prefHeight="25.0" prefWidth="50.0" text="OK" />
+         </children>
+      </Group>
+      <Group fx:id="winGroup" layoutX="57.0" layoutY="185.0" visible="false">
+         <children>
+            <TextField alignment="TOP_CENTER" editable="false" layoutX="137.0" layoutY="-77.0" prefHeight="382.0" prefWidth="406.0" style="-fx-background-color: #bf79f5;" text="YOUR POKEMON WON!!">
+               <font>
+                  <Font name="Consolas Bold Italic" size="37.0" />
+               </font>
+            </TextField>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bf79f5" height="324.0" layoutX="137.0" layoutY="-19.0" stroke="TRANSPARENT" strokeType="INSIDE" width="406.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#723d8a" height="7.0" layoutX="137.0" layoutY="-23.0" stroke="TRANSPARENT" strokeType="INSIDE" width="406.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d5092" height="26.0" layoutX="231.0" layoutY="267.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="67.0" />
+            <Button fx:id="okWinButton" layoutX="213.0" layoutY="259.0" mnemonicParsing="false" onAction="#okButton" prefHeight="25.0" prefWidth="77.0" text="Area" />
+            <TextField fx:id="oponentVidaTextField1" editable="false" layoutX="238.0" layoutY="91.0" prefHeight="31.0" prefWidth="189.0" text="What do you want to do?">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="meName" editable="false" layoutX="383.0" layoutY="211.0" prefHeight="31.0" prefWidth="129.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="148.0" layoutY="24.0" text="You got:" textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="243.0" layoutY="25.0" text="+10 =" textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="392.0" layoutY="248.0" text="got 5 points" textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d5092" height="26.0" layoutX="186.0" layoutY="173.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="163.0" />
+            <Button fx:id="throwPokeballButton" layoutX="172.0" layoutY="164.0" mnemonicParsing="false" onAction="#throwPokeball" prefHeight="25.0" prefWidth="171.0" text="Throw a pokeball">
+               <font>
+                  <Font name="Consolas" size="15.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d5092" height="26.0" layoutX="198.0" layoutY="222.0" stroke="TRANSPARENT" strokeLineCap="ROUND" strokeType="INSIDE" width="151.0" />
+            <Button fx:id="goMainWindowButton" layoutX="173.0" layoutY="214.0" mnemonicParsing="false" onAction="#goMainWindow" prefHeight="25.0" prefWidth="168.0" text="Go to Main Window" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#723d8a" height="7.0" layoutX="137.0" layoutY="-77.0" stroke="TRANSPARENT" strokeType="INSIDE" width="406.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#723d8a" height="60.0" layoutX="137.0" layoutY="-77.0" stroke="TRANSPARENT" strokeType="INSIDE" width="8.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#723d8a" height="60.0" layoutX="535.0" layoutY="-77.0" stroke="TRANSPARENT" strokeType="INSIDE" width="8.0" />
+            <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="197.0" layoutY="256.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/goBack2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="138.0" layoutY="202.0">
+               <image>
+                  <Image url="@../images/homeIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="148.0" layoutY="155.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/´pleballStore.gif" />
+               </image>
+            </ImageView>
+            <TextField fx:id="avatarExperience" editable="false" layoutX="298.0" layoutY="20.0" prefHeight="31.0" prefWidth="50.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label layoutX="246.0" layoutY="-7.0" text="Experience" textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="440.0" layoutY="-7.0" text="Coins" textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="404.0" layoutY="24.0" text="+5 =" textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="howMuchCoins" editable="false" layoutX="451.0" layoutY="19.0" prefHeight="31.0" prefWidth="50.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="400.0" layoutY="-14.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/coin.png" />
+               </image>
+            </ImageView>
+            <Group fx:id="showBalls" layoutX="394.0" layoutY="138.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1d3c59" height="242.0" stroke="#c74a4a00" strokeType="INSIDE" width="107.0" />
+                  <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="4.0" layoutY="52.0">
+                     <image>
+                        <Image url="@../images/pokeball.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="3.0" layoutY="100.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Ultra_Ball.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="41.0" layoutX="3.0" layoutY="152.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Great_Ball.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="41.0" layoutX="3.0" layoutY="200.0" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/Master_Ball.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="ultraballs" editable="false" layoutX="49.0" layoutY="105.0" prefHeight="30.0" prefWidth="51.0" />
+                  <TextField fx:id="greatballs" editable="false" layoutX="51.0" layoutY="157.0" prefHeight="30.0" prefWidth="51.0" />
+                  <TextField fx:id="masterballs" editable="false" layoutX="51.0" layoutY="205.0" prefHeight="30.0" prefWidth="51.0" />
+                  <TextField fx:id="howManyPokeballs" editable="false" layoutX="46.0" layoutY="58.0" prefHeight="31.0" prefWidth="54.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Group>
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="422.0" layoutY="139.0" onMouseEntered="#enterPokeballs" onMouseExited="#exitPokeballs" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pokeballs.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="didntGotPokemonGroup" layoutX="429.0" layoutY="120.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b3092" height="343.0" layoutX="-219.0" stroke="#8a8a8a00" strokeType="INSIDE" width="363.0" />
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="-193.0" layoutY="18.0" prefHeight="72.0" prefWidth="311.0" text="You didn't get it :(" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="noThanksButton" layoutX="-9.0" layoutY="301.0" mnemonicParsing="false" onAction="#noThanksButton" prefHeight="25.0" prefWidth="124.0" text="No thanks" />
+            <Button fx:id="tryAgain" layoutX="-178.0" layoutY="301.0" mnemonicParsing="false" onAction="#tryAgain" prefHeight="25.0" prefWidth="124.0" text="YES" />
+            <ImageView fx:id="meViewImage1" fitHeight="150.0" fitWidth="200.0" layoutX="-122.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pokeball.gif" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="-193.0" layoutY="256.0" prefHeight="32.0" prefWidth="311.0" text="Dou you want to try again?" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="gotPokemonGroup" layoutX="25.0" layoutY="120.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b3092" height="310.0" layoutX="180.0" stroke="#8a8a8a00" strokeType="INSIDE" width="363.0" />
+            <Button fx:id="amazingButton" layoutX="287.0" layoutY="253.0" mnemonicParsing="false" onAction="#goToNotification" prefHeight="25.0" prefWidth="124.0" text="AMAZING" />
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="258.0" layoutY="16.0" prefHeight="60.0" prefWidth="182.0" text="YOU GOT IT" textFill="WHITE">
+               <font>
+                  <Font name="Consolas" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="149.0" fitWidth="200.0" layoutX="249.0" layoutY="67.0">
+               <image>
+                  <Image url="@../images/gotPokeball.txt" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="didntGetPokemonMain" layoutX="219.0" layoutY="106.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1b3092" height="300.0" stroke="#8a8a8a00" strokeType="INSIDE" width="363.0" />
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="18.0" prefHeight="72.0" prefWidth="311.0" text="You didn't get it :(" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="meViewImage11" fitHeight="150.0" fitWidth="200.0" layoutX="97.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pokeball.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="okButton2" layoutX="136.0" layoutY="254.0" mnemonicParsing="false" onAction="#okButtonforNotGettingPK" prefHeight="25.0" prefWidth="79.0" text="OK" />
+         </children>
+      </Group>
+      <Group fx:id="notificationGroup" layoutX="206.0" layoutY="134.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a4264" height="310.0" layoutY="-23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" width="363.0" />
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="2.0" prefHeight="223.0" prefWidth="332.0" text="The new pokemon has been added to the bank" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="27.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="114.0" prefHeight="223.0" prefWidth="332.0" text="Congrats!!" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="27.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="73.0" layoutX="69.0" layoutY="188.0" style="-fx-rotate: 80;">
+               <image>
+                  <Image url="@../images/clicArrow.gif" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageHouse" fitHeight="78.0" fitWidth="88.0" layoutX="138.0" layoutY="178.0" onMouseClicked="#goHome">
+               <image>
+                  <Image url="@../images/homeIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="73.0" layoutX="222.0" layoutY="188.0" style="-fx-rotate: -80;">
+               <image>
+                  <Image url="@../images/clicArrow.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="chooseBallGroup2" layoutX="204.0" layoutY="188.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30633e" height="200.0" stroke="BLACK" strokeType="INSIDE" width="421.0" />
+            <ImageView fx:id="imgMasterball1" fitHeight="67.0" fitWidth="67.0" layoutX="315.0" layoutY="67.0" onMouseClicked="#selectMasterball" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Master_Ball.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgGreatball1" fitHeight="72.0" fitWidth="67.0" layoutX="103.0" layoutY="62.0" onMouseClicked="#selectGreatball" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Great_Ball.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgPokeball1" fitHeight="60.0" fitWidth="58.0" layoutX="16.0" layoutY="72.0" onMouseClicked="#selectPokeballl" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pokeballImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgUltraball1" fitHeight="200.0" fitWidth="67.0" layoutX="201.0" layoutY="67.0" onMouseClicked="#selectUltraball" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Ultra_Ball.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="trowBallR1" layoutX="158.0" layoutY="163.0" mnemonicParsing="false" onAction="#trowBall2" prefHeight="26.0" prefWidth="101.0" text="THROW!!!">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="126.0" layoutY="18.0" text="Choose the Ball" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="chooseBallGroup" layoutX="204.0" layoutY="189.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30633e" height="200.0" stroke="BLACK" strokeType="INSIDE" width="421.0" />
+            <ImageView fx:id="imgMasterball" fitHeight="67.0" fitWidth="67.0" layoutX="315.0" layoutY="67.0" onMouseClicked="#selectMasterball" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Master_Ball.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgGreatball" fitHeight="72.0" fitWidth="67.0" layoutX="103.0" layoutY="62.0" onMouseClicked="#selectGreatball" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Great_Ball.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgPokeball" fitHeight="60.0" fitWidth="58.0" layoutX="16.0" layoutY="72.0" onMouseClicked="#selectPokeballl" preserveRatio="true">
+               <image>
+                  <Image url="@../images/pokeballImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgUltraball" fitHeight="200.0" fitWidth="67.0" layoutX="201.0" layoutY="67.0" onMouseClicked="#selectUltraball" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Ultra_Ball.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="trowBallR" layoutX="158.0" layoutY="163.0" mnemonicParsing="false" onAction="#trowBall" prefHeight="26.0" prefWidth="101.0" text="THROW!!!">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="126.0" layoutY="18.0" text="Choose the Ball" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="noSuficientesPokebolas" layoutX="250.0" layoutY="235.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="108.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="294.0" />
+            <Label layoutX="17.0" layoutY="12.0" text="Don't have enough pokeballs, sorry">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="okTieButton1" layoutX="122.0" layoutY="65.0" mnemonicParsing="false" onAction="#okButtonForPokeballs" prefHeight="25.0" prefWidth="50.0" text="OK" />
+         </children>
+      </Group>
+      <Group fx:id="noSuficientesPokebolas1" layoutX="260.0" layoutY="245.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="108.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="294.0" />
+            <Label layoutX="17.0" layoutY="12.0" text="Don't have enough pokeballs, sorry">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="okTieButton12" layoutX="122.0" layoutY="65.0" mnemonicParsing="false" onAction="#okButtonForPokeballs1" prefHeight="25.0" prefWidth="50.0" text="OK" />
+         </children>
+      </Group>
+      <Group fx:id="newLevelGroup" layoutX="123.0" layoutY="108.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9c6f84" height="368.0" stroke="BLACK" strokeType="INSIDE" width="564.0" />
+            <Label layoutX="241.0" layoutY="105.0" text="Is now on level " textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newLevelNamePokemon" alignment="CENTER" editable="false" layoutX="248.0" layoutY="41.0" prefHeight="50.0" prefWidth="294.0" text="Name Pokemon">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="newLevelLevelPokemon" alignment="CENTER" editable="false" layoutX="248.0" layoutY="159.0" prefHeight="50.0" prefWidth="294.0" text="Level">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="19.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imageNewLevelPoekmon" fitHeight="232.0" fitWidth="215.0" layoutX="10.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="greatButton" layoutX="184.0" layoutY="321.0" mnemonicParsing="false" onAction="#greatButtonAction" prefHeight="26.0" prefWidth="200.0" text="GREAT!!!" />
+            <Label layoutX="375.0" layoutY="233.0" text="LIFE    +2">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="313.0" layoutY="273.0" text="ALL ABILITIES   +1">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="newEvolution" layoutX="123.0" layoutY="108.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5de75" height="428.0" layoutX="-36.0" layoutY="-52.0" stroke="BLACK" strokeType="INSIDE" width="660.0" />
+            <Label layoutX="29.0" layoutY="-29.0" text="Evolution!! of " textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="oldNameEvolution" alignment="CENTER" editable="false" layoutX="-8.0" layoutY="287.0" prefHeight="50.0" prefWidth="166.0" text="Name Pokemon">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="19.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="newNameEvolution" alignment="CENTER" editable="false" layoutX="419.0" layoutY="287.0" prefHeight="50.0" prefWidth="183.0" text="name new pokemon">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="19.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="oldImagePokemon" fitHeight="232.0" fitWidth="215.0" layoutX="-22.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="greatButton1" layoutX="194.0" layoutY="299.0" mnemonicParsing="false" onAction="#greatButtonAction" prefHeight="26.0" prefWidth="200.0" text="GREAT!!!" />
+            <ImageView fx:id="imgNewPokemonEvolution" fitHeight="232.0" fitWidth="215.0" layoutX="387.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="nameOldPokemon" layoutX="313.0" layoutY="-29.0" text="NameOldPokemon" textFill="#08282b">
+               <font>
+                  <Font name="Consolas" size="35.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="204.0" layoutY="94.0" style="-fx-rotate: 90;">
+               <image>
+                  <Image url="@../images/clicArrow.gif" />
+               </image>
+            </ImageView>
+            <Label layoutX="204.0" layoutY="34.0" prefHeight="54.0" prefWidth="165.0" text="Starting level of evolution:" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="91.0" text="5">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Group fx:id="newLevelEntrenador" layoutX="193.0" layoutY="134.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a1eb7a" height="398.0" layoutX="-62.0" layoutY="-43.0" stroke="BLACK" strokeType="INSIDE" width="587.0" />
+            <Label layoutX="303.0" layoutY="97.0" text="Your new level is" textFill="#08282b">
+               <font>
+                  <Font name="Comic Sans MS" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imgEntrenador" fitHeight="326.0" fitWidth="241.0" layoutX="-10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="newLevenEntrenador" alignment="CENTER" editable="false" layoutX="343.0" layoutY="156.0" prefHeight="55.0" prefWidth="66.0" text="j">
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font></TextField>
+            <Button fx:id="awesomeButtonToNewLevelEntrenador" layoutX="293.0" layoutY="266.0" mnemonicParsing="false" onAction="#awesomeButtonToNewLevelEntrenador" prefHeight="47.0" prefWidth="166.0" text="Awesome!!">
+               <font>
+                  <Font name="Comic Sans MS" size="19.0" />
+               </font></Button>
+            <Label fx:id="nameEntrenadorMe" layoutX="343.0" layoutY="28.0" text="name" textFill="#08282b">
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+      <Button fx:id="usePotionButton" layoutX="512.0" layoutY="501.0" mnemonicParsing="false" onAction="#usePotionAction" prefHeight="34.0" prefWidth="122.0" style="-fx-background-color: purple;" text="Use Potion" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Group fx:id="potionsGroup" layoutX="178.0" layoutY="159.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#791797" height="242.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
+            <ImageView fx:id="maxImg" fitHeight="108.0" fitWidth="113.0" layoutX="288.0" layoutY="18.0" onMouseClicked="#selectMaxPotion" preserveRatio="true">
+               <image>
+                  <Image url="@../images/maxPotion.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="simpleImg" fitHeight="115.0" fitWidth="122.0" layoutX="14.0" layoutY="13.0" onMouseClicked="#selectSimplePotion" preserveRatio="true">
+               <image>
+                  <Image url="@../images/potionSimple.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="superImg" fitHeight="115.0" fitWidth="129.0" layoutX="142.0" layoutY="13.0" onMouseClicked="#selectSuperPotion" preserveRatio="true">
+               <image>
+                  <Image url="@../images/SuperPotion.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="useButton" layoutX="123.0" layoutY="168.0" mnemonicParsing="false" onAction="#useButtonAction" prefHeight="51.0" prefWidth="182.0" text="USE">
+               <font>
+                  <Font name="Comic Sans MS" size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </Group>
+      <Group fx:id="donthavePotions" layoutX="160.0" layoutY="156.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="194.0" stroke="BLACK" strokeType="INSIDE" width="429.0" />
+            <Label layoutX="23.0" layoutY="33.0" prefHeight="93.0" prefWidth="388.0" text="You don't own enough of that Potion" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button layoutX="171.0" layoutY="154.0" mnemonicParsing="false" onAction="#okForDontHavePotions" prefHeight="26.0" prefWidth="88.0" text="OK" />
+         </children>
+      </Group>
+      <Group fx:id="readyToevolve" layoutX="150.0" layoutY="116.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d2e8fd" height="300.0" stroke="BLACK" strokeType="INSIDE" width="541.0" />
+            <Label layoutX="104.0" layoutY="23.0" text="This Pokemon is ready to  evolve!!!">
+               <font>
+                  <Font name="Comic Sans MS" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="73.0" text="But you already have the evolution :c">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="114.0" prefHeight="72.0" prefWidth="494.0" text="If you work hard and make the evolution evolve, this one can evolve the next time you use it in a fight " textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="readyToevolveOkButton" layoutX="224.0" layoutY="243.0" mnemonicParsing="false" onAction="#readyToevolveOkButtonAction" text="OK, thank you" />
+            <Label layoutX="99.0" layoutY="195.0" text="meanwhile, it's level its going to rise and rise">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="560.0" maxWidth="800.0" minHeight="560.0" minWidth="800.0" prefHeight="560.0" prefWidth="800.0" style="-fx-background-image: url(/images/backgroundPantallaInicial.png); -fx-background-size: 100% 110%;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewControllers.SelectPokemonToFightPantalla">
+   <children>
+      <ImageView fx:id="beltImage1" fitHeight="122.0" fitWidth="122.0" layoutX="59.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/star.png" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="187.0" layoutY="14.0" prefHeight="38.0" prefWidth="425.0" text="Arrange your Pokémons To Fight" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="goBack" fitHeight="38.0" fitWidth="36.0" layoutX="6.0" layoutY="9.0" onMouseClicked="#goback" preserveRatio="true">
+         <image>
+            <Image url="@../images/goBack2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beltImage2" fitHeight="122.0" fitWidth="122.0" layoutX="255.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beltImage3" fitHeight="122.0" fitWidth="122.0" layoutX="440.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beltImage4" fitHeight="122.0" fitWidth="122.0" layoutX="620.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beltImage5" fitHeight="122.0" fitWidth="122.0" layoutX="59.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="beltImage6" fitHeight="122.0" fitWidth="122.0" layoutX="255.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/star.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startButton" layoutX="514.0" layoutY="444.0" mnemonicParsing="false" onAction="#goToAreasButton" prefHeight="84.0" prefWidth="198.0" style="-fx-background-color: #E98F2F;" text="START">
+         <font>
+            <Font name="Comic Sans MS Bold Italic" size="27.0" />
+         </font>
+      </Button>
+      <Label fx:id="beltName1" layoutX="59.0" layoutY="261.0" prefHeight="18.0" prefWidth="105.0" text="Name" />
+      <Label fx:id="beltName2" layoutX="263.0" layoutY="261.0" prefHeight="18.0" prefWidth="105.0" text="Name" />
+      <Label fx:id="beltName3" layoutX="450.0" layoutY="261.0" prefHeight="18.0" prefWidth="105.0" text="Name" />
+      <Label fx:id="beltName4" layoutX="629.0" layoutY="261.0" prefHeight="18.0" prefWidth="105.0" text="Name" />
+      <Label fx:id="beltName5" layoutX="66.0" layoutY="486.0" prefHeight="18.0" prefWidth="105.0" text="Name" />
+      <Label fx:id="beltName6" layoutX="266.0" layoutY="486.0" prefHeight="18.0" prefWidth="105.0" text="Name" />
+      <TextField fx:id="change" layoutX="504.0" layoutY="366.0" prefHeight="26.0" prefWidth="50.0" />
+      <TextField fx:id="forWhat" layoutX="690.0" layoutY="366.0" prefHeight="26.0" prefWidth="50.0" />
+      <Label layoutX="451.0" layoutY="371.0" text="Change">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="653.0" layoutY="370.0" prefHeight="18.0" prefWidth="26.0" text="For">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="510.0" layoutY="322.0" prefHeight="18.0" prefWidth="222.0" text="Write the number of the Pokémon">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="replaceButton" layoutX="571.0" layoutY="367.0" mnemonicParsing="false" onAction="#replace" style="-fx-background-color: #58B64E;" text="Replace">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font></Button>
+      <Group fx:id="selectOneGroup" layoutX="242.0" layoutY="149.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#364b5f" height="196.0" stroke="#b4b9ff" strokeType="INSIDE" width="316.0" />
+            <Label alignment="CENTER" layoutX="14.0" layoutY="16.0" prefHeight="106.0" prefWidth="286.0" text="Write the numbers correctly" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS" size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="okButton" layoutX="121.0" layoutY="150.0" mnemonicParsing="false" onAction="#okButton" prefHeight="26.0" prefWidth="72.0" text="OK" />
+         </children>
+      </Group>
+      <Label layoutX="52.0" layoutY="102.0" text="0">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="102.0" text="1">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="433.0" layoutY="102.0" text="2">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="613.0" layoutY="102.0" text="3">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="331.0" text="4">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="256.0" layoutY="331.0" text="5">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="800.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="6894.0" prefWidth="800.0" style="-fx-background-color: #E2C8FF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewControllers.Pokedex">
+  <content>
+    <AnchorPane maxWidth="800.0" minHeight="0.0" minWidth="0.0" prefHeight="6901.0" prefWidth="782.0" style="-fx-background-color: #E2C8FF;">
+         <children>
+            <ImageView fx:id="beltImg0" fitHeight="104.0" fitWidth="117.0" layoutX="150.0" layoutY="75.0" preserveRatio="true" />
+            <Label alignment="CENTER" layoutX="270.0" layoutY="14.0" prefHeight="33.0" prefWidth="242.0" style="-fx-background-color: #9565CA;" text="BELT POKEMON" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="namePokemon0" contentDisplay="CENTER" layoutX="167.0" layoutY="198.0" text="NamePokemon" />
+            <ImageView fx:id="beltImg1" fitHeight="104.0" fitWidth="117.0" layoutX="332.0" layoutY="75.0" preserveRatio="true" />
+            <Label fx:id="namePokemon1" contentDisplay="CENTER" layoutX="349.0" layoutY="198.0" text="NamePokemon" />
+            <ImageView fx:id="beltImg2" fitHeight="104.0" fitWidth="117.0" layoutX="512.0" layoutY="75.0" preserveRatio="true" />
+            <Label fx:id="namePokemon2" contentDisplay="CENTER" layoutX="529.0" layoutY="198.0" text="NamePokemon" />
+            <ImageView fx:id="beltImg3" fitHeight="104.0" fitWidth="117.0" layoutX="151.0" layoutY="267.0" preserveRatio="true" />
+            <Label fx:id="namePokemon3" contentDisplay="CENTER" layoutX="168.0" layoutY="390.0" text="NamePokemon" />
+            <ImageView fx:id="beltImg4" fitHeight="104.0" fitWidth="117.0" layoutX="333.0" layoutY="267.0" preserveRatio="true" />
+            <Label fx:id="namePokemon4" contentDisplay="CENTER" layoutX="350.0" layoutY="390.0" text="NamePokemon" />
+            <ImageView fx:id="beltImg5" fitHeight="104.0" fitWidth="117.0" layoutX="513.0" layoutY="267.0" preserveRatio="true" />
+            <Label fx:id="namePokemon5" contentDisplay="CENTER" layoutX="530.0" layoutY="390.0" text="NamePokemon" />
+            <ImageView fx:id="goBackImg" fitHeight="33.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goBackAction">
+               <image>
+                  <Image url="@../images/goBack2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="140.0" layoutY="69.0" text="0">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="322.0" layoutY="69.0" text="1">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="503.0" layoutY="69.0" text="2">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="140.0" layoutY="256.0" text="3">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="323.0" layoutY="256.0" text="4">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="503.0" layoutY="256.0" text="5">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="268.0" layoutY="553.0" prefHeight="33.0" prefWidth="242.0" style="-fx-background-color: #9565CA;" text="BANK POKEMON" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg0" fitHeight="104.0" fitWidth="117.0" layoutX="50.0" layoutY="631.0" preserveRatio="true" />
+            <Label fx:id="nameBank0" contentDisplay="CENTER" layoutX="67.0" layoutY="754.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg1" fitHeight="104.0" fitWidth="117.0" layoutX="232.0" layoutY="631.0" preserveRatio="true" />
+            <Label fx:id="nameBank1" contentDisplay="CENTER" layoutX="249.0" layoutY="754.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg2" fitHeight="104.0" fitWidth="117.0" layoutX="412.0" layoutY="631.0" preserveRatio="true" />
+            <Label fx:id="nameBank2" contentDisplay="CENTER" layoutX="429.0" layoutY="754.0" text="NamePokemon" />
+            <Label layoutX="40.0" layoutY="625.0" text="0">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="222.0" layoutY="625.0" text="1">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="403.0" layoutY="625.0" text="2">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg3" fitHeight="104.0" fitWidth="117.0" layoutX="589.0" layoutY="630.0" preserveRatio="true" />
+            <Label fx:id="nameBank3" contentDisplay="CENTER" layoutX="606.0" layoutY="753.0" text="NamePokemon" />
+            <Label layoutX="580.0" layoutY="624.0" text="3">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg4" fitHeight="104.0" fitWidth="117.0" layoutX="50.0" layoutY="793.0" preserveRatio="true" />
+            <Label fx:id="nameBank4" contentDisplay="CENTER" layoutX="67.0" layoutY="916.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg5" fitHeight="104.0" fitWidth="117.0" layoutX="232.0" layoutY="793.0" preserveRatio="true" />
+            <Label fx:id="nameBank5" contentDisplay="CENTER" layoutX="249.0" layoutY="916.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg6" fitHeight="104.0" fitWidth="117.0" layoutX="412.0" layoutY="793.0" preserveRatio="true" />
+            <Label fx:id="nameBank6" contentDisplay="CENTER" layoutX="429.0" layoutY="916.0" text="NamePokemon" />
+            <Label layoutX="40.0" layoutY="787.0" text="4">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="222.0" layoutY="787.0" text="5">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="403.0" layoutY="787.0" text="6">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg7" fitHeight="104.0" fitWidth="117.0" layoutX="589.0" layoutY="792.0" preserveRatio="true" />
+            <Label fx:id="nameBank7" contentDisplay="CENTER" layoutX="606.0" layoutY="915.0" text="NamePokemon" />
+            <Label layoutX="580.0" layoutY="786.0" text="7">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg8" fitHeight="104.0" fitWidth="117.0" layoutX="50.0" layoutY="961.0" preserveRatio="true" />
+            <Label fx:id="nameBank8" contentDisplay="CENTER" layoutX="67.0" layoutY="1084.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg9" fitHeight="104.0" fitWidth="117.0" layoutX="232.0" layoutY="961.0" preserveRatio="true" />
+            <Label fx:id="nameBank9" contentDisplay="CENTER" layoutX="249.0" layoutY="1084.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg10" fitHeight="104.0" fitWidth="117.0" layoutX="412.0" layoutY="961.0" preserveRatio="true" />
+            <Label fx:id="nameBank10" contentDisplay="CENTER" layoutX="429.0" layoutY="1084.0" text="NamePokemon" />
+            <Label layoutX="40.0" layoutY="955.0" text="8">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="222.0" layoutY="955.0" text="9">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="386.0" layoutY="955.0" text="10">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg11" fitHeight="104.0" fitWidth="117.0" layoutX="589.0" layoutY="960.0" preserveRatio="true" />
+            <Label fx:id="nameBank11" contentDisplay="CENTER" layoutX="606.0" layoutY="1083.0" text="NamePokemon" />
+            <Label layoutX="563.0" layoutY="954.0" text="11">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg12" fitHeight="104.0" fitWidth="117.0" layoutX="56.0" layoutY="1121.0" preserveRatio="true" />
+            <Label fx:id="nameBank12" contentDisplay="CENTER" layoutX="73.0" layoutY="1244.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg13" fitHeight="104.0" fitWidth="117.0" layoutX="238.0" layoutY="1121.0" preserveRatio="true" />
+            <Label fx:id="nameBank13" contentDisplay="CENTER" layoutX="255.0" layoutY="1244.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg14" fitHeight="104.0" fitWidth="117.0" layoutX="418.0" layoutY="1121.0" preserveRatio="true" />
+            <Label fx:id="nameBank14" contentDisplay="CENTER" layoutX="435.0" layoutY="1244.0" text="NamePokemon" />
+            <Label layoutX="29.0" layoutY="1115.0" text="12">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="1115.0" text="13">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="392.0" layoutY="1115.0" text="14">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg15" fitHeight="104.0" fitWidth="117.0" layoutX="595.0" layoutY="1120.0" preserveRatio="true" />
+            <Label fx:id="nameBank15" contentDisplay="CENTER" layoutX="612.0" layoutY="1243.0" text="NamePokemon" />
+            <Label layoutX="569.0" layoutY="1114.0" text="15">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg16" fitHeight="104.0" fitWidth="117.0" layoutX="56.0" layoutY="1279.0" />
+            <Label fx:id="nameBank16" contentDisplay="CENTER" layoutX="73.0" layoutY="1402.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg17" fitHeight="104.0" fitWidth="117.0" layoutX="238.0" layoutY="1279.0" />
+            <Label fx:id="nameBank17" contentDisplay="CENTER" layoutX="255.0" layoutY="1402.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg18" fitHeight="104.0" fitWidth="117.0" layoutX="418.0" layoutY="1279.0" />
+            <Label fx:id="nameBank18" contentDisplay="CENTER" layoutX="435.0" layoutY="1402.0" text="NamePokemon" />
+            <Label layoutX="29.0" layoutY="1273.0" text="16">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="1273.0" text="17">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="392.0" layoutY="1273.0" text="18">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg19" fitHeight="104.0" fitWidth="117.0" layoutX="595.0" layoutY="1278.0" />
+            <Label fx:id="nameBank19" contentDisplay="CENTER" layoutX="612.0" layoutY="1401.0" text="NamePokemon" />
+            <Label layoutX="569.0" layoutY="1272.0" text="19">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg20" fitHeight="104.0" fitWidth="117.0" layoutX="64.0" layoutY="1461.0" />
+            <Label fx:id="nameBank20" contentDisplay="CENTER" layoutX="81.0" layoutY="1584.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg21" fitHeight="104.0" fitWidth="117.0" layoutX="246.0" layoutY="1461.0" />
+            <Label fx:id="nameBank21" contentDisplay="CENTER" layoutX="263.0" layoutY="1584.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg22" fitHeight="104.0" fitWidth="117.0" layoutX="426.0" layoutY="1461.0" />
+            <Label fx:id="nameBank22" contentDisplay="CENTER" layoutX="443.0" layoutY="1584.0" text="NamePokemon" />
+            <Label layoutX="37.0" layoutY="1455.0" text="20">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="1455.0" text="21">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="1455.0" text="22">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg23" fitHeight="104.0" fitWidth="117.0" layoutX="603.0" layoutY="1460.0" />
+            <Label fx:id="nameBank23" contentDisplay="CENTER" layoutX="620.0" layoutY="1583.0" text="NamePokemon" />
+            <Label layoutX="577.0" layoutY="1454.0" text="23">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg24" fitHeight="104.0" fitWidth="117.0" layoutX="64.0" layoutY="1619.0" />
+            <Label fx:id="nameBank24" contentDisplay="CENTER" layoutX="72.0" layoutY="1742.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg25" fitHeight="104.0" fitWidth="117.0" layoutX="246.0" layoutY="1619.0" />
+            <Label fx:id="nameBank25" contentDisplay="CENTER" layoutX="254.0" layoutY="1742.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg26" fitHeight="104.0" fitWidth="117.0" layoutX="426.0" layoutY="1619.0" />
+            <Label fx:id="nameBank26" contentDisplay="CENTER" layoutX="434.0" layoutY="1742.0" text="NamePokemon" />
+            <Label layoutX="37.0" layoutY="1613.0" text="24">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="1613.0" text="25">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="1613.0" text="26">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg27" fitHeight="104.0" fitWidth="117.0" layoutX="603.0" layoutY="1618.0" />
+            <Label fx:id="nameBank27" contentDisplay="CENTER" layoutX="611.0" layoutY="1741.0" text="NamePokemon" />
+            <Label layoutX="577.0" layoutY="1612.0" text="27">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg28" fitHeight="104.0" fitWidth="117.0" layoutX="64.0" layoutY="1777.0" />
+            <Label fx:id="nameBank28" contentDisplay="CENTER" layoutX="81.0" layoutY="1900.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg29" fitHeight="104.0" fitWidth="117.0" layoutX="246.0" layoutY="1777.0" />
+            <Label fx:id="nameBank29" contentDisplay="CENTER" layoutX="263.0" layoutY="1900.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg30" fitHeight="104.0" fitWidth="117.0" layoutX="426.0" layoutY="1777.0" />
+            <Label fx:id="nameBank30" contentDisplay="CENTER" layoutX="443.0" layoutY="1900.0" text="NamePokemon" />
+            <Label layoutX="37.0" layoutY="1771.0" text="28">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="1771.0" text="29">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="1771.0" text="30">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg31" fitHeight="104.0" fitWidth="117.0" layoutX="603.0" layoutY="1776.0" />
+            <Label fx:id="nameBank31" contentDisplay="CENTER" layoutX="620.0" layoutY="1899.0" text="NamePokemon" />
+            <Label layoutX="577.0" layoutY="1770.0" text="31">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg32" fitHeight="104.0" fitWidth="117.0" layoutX="64.0" layoutY="1935.0" />
+            <Label fx:id="nameBank32" contentDisplay="CENTER" layoutX="81.0" layoutY="2058.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg33" fitHeight="104.0" fitWidth="117.0" layoutX="246.0" layoutY="1935.0" />
+            <Label fx:id="nameBank33" contentDisplay="CENTER" layoutX="263.0" layoutY="2058.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg34" fitHeight="104.0" fitWidth="117.0" layoutX="426.0" layoutY="1935.0" />
+            <Label fx:id="nameBank34" contentDisplay="CENTER" layoutX="443.0" layoutY="2058.0" text="NamePokemon" />
+            <Label layoutX="37.0" layoutY="1929.0" text="32">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="1929.0" text="33">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="400.0" layoutY="1929.0" text="34">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg35" fitHeight="104.0" fitWidth="117.0" layoutX="603.0" layoutY="1934.0" />
+            <Label fx:id="nameBank35" contentDisplay="CENTER" layoutX="620.0" layoutY="2057.0" text="NamePokemon" />
+            <Label layoutX="577.0" layoutY="1928.0" text="35">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg36" fitHeight="104.0" fitWidth="117.0" layoutX="72.0" layoutY="2117.0" />
+            <Label fx:id="nameBank36" contentDisplay="CENTER" layoutX="89.0" layoutY="2240.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg37" fitHeight="104.0" fitWidth="117.0" layoutX="254.0" layoutY="2117.0" />
+            <Label fx:id="nameBank37" contentDisplay="CENTER" layoutX="271.0" layoutY="2240.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg38" fitHeight="104.0" fitWidth="117.0" layoutX="434.0" layoutY="2117.0" />
+            <Label fx:id="nameBank38" contentDisplay="CENTER" layoutX="451.0" layoutY="2240.0" text="NamePokemon" />
+            <Label layoutX="45.0" layoutY="2111.0" text="36">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="2111.0" text="37">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="2111.0" text="38">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg39" fitHeight="104.0" fitWidth="117.0" layoutX="611.0" layoutY="2116.0" />
+            <Label fx:id="nameBank39" contentDisplay="CENTER" layoutX="628.0" layoutY="2239.0" text="NamePokemon" />
+            <Label layoutX="585.0" layoutY="2110.0" text="39">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg40" fitHeight="104.0" fitWidth="117.0" layoutX="72.0" layoutY="2275.0" />
+            <Label fx:id="nameBank40" contentDisplay="CENTER" layoutX="89.0" layoutY="2398.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg41" fitHeight="104.0" fitWidth="117.0" layoutX="254.0" layoutY="2275.0" />
+            <Label fx:id="nameBank41" contentDisplay="CENTER" layoutX="271.0" layoutY="2398.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg42" fitHeight="104.0" fitWidth="117.0" layoutX="434.0" layoutY="2275.0" />
+            <Label fx:id="nameBank42" contentDisplay="CENTER" layoutX="451.0" layoutY="2398.0" text="NamePokemon" />
+            <Label layoutX="45.0" layoutY="2269.0" text="40">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="2269.0" text="41">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="2269.0" text="42">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg43" fitHeight="104.0" fitWidth="117.0" layoutX="611.0" layoutY="2274.0" />
+            <Label fx:id="nameBank43" contentDisplay="CENTER" layoutX="628.0" layoutY="2397.0" text="NamePokemon" />
+            <Label layoutX="585.0" layoutY="2268.0" text="43">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg56" fitHeight="104.0" fitWidth="117.0" layoutX="80.0" layoutY="2932.0" />
+            <Label fx:id="nameBank56" contentDisplay="CENTER" layoutX="97.0" layoutY="3055.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg57" fitHeight="104.0" fitWidth="117.0" layoutX="262.0" layoutY="2932.0" />
+            <Label fx:id="nameBank57" contentDisplay="CENTER" layoutX="279.0" layoutY="3055.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg58" fitHeight="104.0" fitWidth="117.0" layoutX="442.0" layoutY="2932.0" />
+            <Label fx:id="nameBank58" contentDisplay="CENTER" layoutX="459.0" layoutY="3055.0" text="NamePokemon" />
+            <Label layoutX="53.0" layoutY="2926.0" text="56">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="235.0" layoutY="2926.0" text="57">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="416.0" layoutY="2926.0" text="58">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg59" fitHeight="104.0" fitWidth="117.0" layoutX="619.0" layoutY="2931.0" />
+            <Label fx:id="nameBank59" contentDisplay="CENTER" layoutX="636.0" layoutY="3054.0" text="NamePokemon" />
+            <Label layoutX="593.0" layoutY="2925.0" text="59">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg44" fitHeight="104.0" fitWidth="117.0" layoutX="73.0" layoutY="2429.0" />
+            <Label fx:id="nameBank44" contentDisplay="CENTER" layoutX="90.0" layoutY="2552.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg45" fitHeight="104.0" fitWidth="117.0" layoutX="255.0" layoutY="2429.0" />
+            <Label fx:id="nameBank45" contentDisplay="CENTER" layoutX="272.0" layoutY="2552.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg46" fitHeight="104.0" fitWidth="117.0" layoutX="435.0" layoutY="2429.0" />
+            <Label fx:id="nameBank46" contentDisplay="CENTER" layoutX="452.0" layoutY="2552.0" text="NamePokemon" />
+            <Label layoutX="46.0" layoutY="2423.0" text="44">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="2423.0" text="45">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="2423.0" text="46">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg47" fitHeight="104.0" fitWidth="117.0" layoutX="612.0" layoutY="2428.0" />
+            <Label fx:id="nameBank47" contentDisplay="CENTER" layoutX="629.0" layoutY="2551.0" text="NamePokemon" />
+            <Label layoutX="586.0" layoutY="2422.0" text="47">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg48" fitHeight="104.0" fitWidth="117.0" layoutX="73.0" layoutY="2587.0" />
+            <Label fx:id="nameBank48" contentDisplay="CENTER" layoutX="90.0" layoutY="2710.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg49" fitHeight="104.0" fitWidth="117.0" layoutX="255.0" layoutY="2587.0" />
+            <Label fx:id="nameBank49" contentDisplay="CENTER" layoutX="272.0" layoutY="2710.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg50" fitHeight="104.0" fitWidth="117.0" layoutX="435.0" layoutY="2587.0" />
+            <Label fx:id="nameBank50" contentDisplay="CENTER" layoutX="452.0" layoutY="2710.0" text="NamePokemon" />
+            <Label layoutX="46.0" layoutY="2581.0" text="48">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="2581.0" text="49">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="2581.0" text="50">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg51" fitHeight="104.0" fitWidth="117.0" layoutX="612.0" layoutY="2586.0" />
+            <Label fx:id="nameBank51" contentDisplay="CENTER" layoutX="629.0" layoutY="2709.0" text="NamePokemon" />
+            <Label layoutX="586.0" layoutY="2580.0" text="51">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg52" fitHeight="104.0" fitWidth="117.0" layoutX="81.0" layoutY="2769.0" />
+            <Label fx:id="nameBank52" contentDisplay="CENTER" layoutX="98.0" layoutY="2892.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg53" fitHeight="104.0" fitWidth="117.0" layoutX="263.0" layoutY="2769.0" />
+            <Label fx:id="nameBank53" contentDisplay="CENTER" layoutX="280.0" layoutY="2892.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg54" fitHeight="104.0" fitWidth="117.0" layoutX="443.0" layoutY="2769.0" />
+            <Label fx:id="nameBank54" contentDisplay="CENTER" layoutX="460.0" layoutY="2892.0" text="NamePokemon" />
+            <Label layoutX="54.0" layoutY="2763.0" text="52">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="236.0" layoutY="2763.0" text="53">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="2763.0" text="54">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg55" fitHeight="104.0" fitWidth="117.0" layoutX="620.0" layoutY="2768.0" />
+            <Label fx:id="nameBank55" contentDisplay="CENTER" layoutX="637.0" layoutY="2891.0" text="NamePokemon" />
+            <Label layoutX="594.0" layoutY="2762.0" text="55">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg60" fitHeight="104.0" fitWidth="117.0" layoutX="77.0" layoutY="3097.0" />
+            <Label fx:id="nameBank60" contentDisplay="CENTER" layoutX="94.0" layoutY="3220.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg61" fitHeight="104.0" fitWidth="117.0" layoutX="259.0" layoutY="3097.0" nodeOrientation="RIGHT_TO_LEFT" />
+            <Label fx:id="nameBank61" contentDisplay="CENTER" layoutX="276.0" layoutY="3220.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg62" fitHeight="104.0" fitWidth="117.0" layoutX="439.0" layoutY="3097.0" />
+            <Label fx:id="nameBank62" contentDisplay="CENTER" layoutX="456.0" layoutY="3220.0" text="NamePokemon" />
+            <Label layoutX="67.0" layoutY="3091.0" text="60">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="3091.0" text="61">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="430.0" layoutY="3091.0" text="62">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg63" fitHeight="104.0" fitWidth="117.0" layoutX="616.0" layoutY="3096.0" />
+            <Label fx:id="nameBank63" contentDisplay="CENTER" layoutX="633.0" layoutY="3219.0" text="NamePokemon" />
+            <Label layoutX="607.0" layoutY="3090.0" text="63">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg64" fitHeight="104.0" fitWidth="117.0" layoutX="77.0" layoutY="3259.0" />
+            <Label fx:id="nameBank64" contentDisplay="CENTER" layoutX="94.0" layoutY="3382.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg65" fitHeight="104.0" fitWidth="117.0" layoutX="259.0" layoutY="3259.0" />
+            <Label fx:id="nameBank65" contentDisplay="CENTER" layoutX="276.0" layoutY="3382.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg66" fitHeight="104.0" fitWidth="117.0" layoutX="439.0" layoutY="3259.0" />
+            <Label fx:id="nameBank66" contentDisplay="CENTER" layoutX="456.0" layoutY="3382.0" text="NamePokemon" />
+            <Label layoutX="67.0" layoutY="3253.0" text="64">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="3253.0" text="65">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="430.0" layoutY="3253.0" text="66">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg67" fitHeight="104.0" fitWidth="117.0" layoutX="616.0" layoutY="3258.0" />
+            <Label fx:id="nameBank67" contentDisplay="CENTER" layoutX="633.0" layoutY="3381.0" text="NamePokemon" />
+            <Label layoutX="607.0" layoutY="3252.0" text="67">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg68" fitHeight="104.0" fitWidth="117.0" layoutX="77.0" layoutY="3427.0" />
+            <Label fx:id="nameBank68" contentDisplay="CENTER" layoutX="94.0" layoutY="3550.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg69" fitHeight="104.0" fitWidth="117.0" layoutX="259.0" layoutY="3427.0" />
+            <Label fx:id="nameBank69" contentDisplay="CENTER" layoutX="276.0" layoutY="3550.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg70" fitHeight="104.0" fitWidth="117.0" layoutX="439.0" layoutY="3427.0" />
+            <Label fx:id="nameBank70" contentDisplay="CENTER" layoutX="456.0" layoutY="3550.0" text="NamePokemon" />
+            <Label layoutX="67.0" layoutY="3421.0" text="68">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="249.0" layoutY="3421.0" text="69">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="413.0" layoutY="3421.0" text="70">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg71" fitHeight="104.0" fitWidth="117.0" layoutX="616.0" layoutY="3426.0" />
+            <Label fx:id="nameBank71" contentDisplay="CENTER" layoutX="633.0" layoutY="3549.0" text="NamePokemon" />
+            <Label layoutX="590.0" layoutY="3420.0" text="71">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg72" fitHeight="104.0" fitWidth="117.0" layoutX="83.0" layoutY="3587.0" />
+            <Label fx:id="nameBank72" contentDisplay="CENTER" layoutX="100.0" layoutY="3710.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg73" fitHeight="104.0" fitWidth="117.0" layoutX="265.0" layoutY="3587.0" />
+            <Label fx:id="nameBank73" contentDisplay="CENTER" layoutX="282.0" layoutY="3710.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg74" fitHeight="104.0" fitWidth="117.0" layoutX="445.0" layoutY="3587.0" preserveRatio="true" />
+            <Label fx:id="nameBank74" contentDisplay="CENTER" layoutX="462.0" layoutY="3710.0" text="NamePokemon" />
+            <Label layoutX="56.0" layoutY="3581.0" text="72">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="3581.0" text="73">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="419.0" layoutY="3581.0" text="74">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg75" fitHeight="104.0" fitWidth="117.0" layoutX="622.0" layoutY="3586.0" />
+            <Label fx:id="nameBank75" contentDisplay="CENTER" layoutX="639.0" layoutY="3709.0" text="NamePokemon" />
+            <Label layoutX="596.0" layoutY="3580.0" text="75">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg76" fitHeight="104.0" fitWidth="117.0" layoutX="83.0" layoutY="3745.0" />
+            <Label fx:id="nameBank76" contentDisplay="CENTER" layoutX="100.0" layoutY="3868.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg77" fitHeight="104.0" fitWidth="117.0" layoutX="265.0" layoutY="3745.0" />
+            <Label fx:id="nameBank77" contentDisplay="CENTER" layoutX="282.0" layoutY="3868.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg78" fitHeight="104.0" fitWidth="117.0" layoutX="445.0" layoutY="3745.0" />
+            <Label fx:id="nameBank78" contentDisplay="CENTER" layoutX="462.0" layoutY="3868.0" text="NamePokemon" />
+            <Label layoutX="56.0" layoutY="3739.0" text="76">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="3739.0" text="77">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="419.0" layoutY="3739.0" text="78">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg79" fitHeight="104.0" fitWidth="117.0" layoutX="622.0" layoutY="3744.0" />
+            <Label fx:id="nameBank79" contentDisplay="CENTER" layoutX="639.0" layoutY="3867.0" text="NamePokemon" />
+            <Label layoutX="596.0" layoutY="3738.0" text="79">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg80" fitHeight="104.0" fitWidth="117.0" layoutX="83.0" layoutY="3927.0" />
+            <Label fx:id="nameBank80" contentDisplay="CENTER" layoutX="100.0" layoutY="4050.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg81" fitHeight="104.0" fitWidth="117.0" layoutX="265.0" layoutY="3927.0" />
+            <Label fx:id="nameBank81" contentDisplay="CENTER" layoutX="282.0" layoutY="4050.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg82" fitHeight="104.0" fitWidth="117.0" layoutX="445.0" layoutY="3927.0" />
+            <Label fx:id="nameBank82" contentDisplay="CENTER" layoutX="462.0" layoutY="4050.0" text="NamePokemon" />
+            <Label layoutX="56.0" layoutY="3921.0" text="80">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="3921.0" text="81">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="419.0" layoutY="3921.0" text="82">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg83" fitHeight="104.0" fitWidth="117.0" layoutX="622.0" layoutY="3926.0" />
+            <Label fx:id="nameBank83" contentDisplay="CENTER" layoutX="639.0" layoutY="4049.0" text="NamePokemon" />
+            <Label layoutX="596.0" layoutY="3920.0" text="83">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg84" fitHeight="104.0" fitWidth="117.0" layoutX="83.0" layoutY="4085.0" />
+            <Label fx:id="nameBank84" contentDisplay="CENTER" layoutX="100.0" layoutY="4208.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg85" fitHeight="104.0" fitWidth="117.0" layoutX="265.0" layoutY="4085.0" />
+            <Label fx:id="nameBank85" contentDisplay="CENTER" layoutX="282.0" layoutY="4208.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg86" fitHeight="104.0" fitWidth="117.0" layoutX="445.0" layoutY="4085.0" />
+            <Label fx:id="nameBank86" contentDisplay="CENTER" layoutX="462.0" layoutY="4208.0" text="NamePokemon" />
+            <Label layoutX="56.0" layoutY="4079.0" text="84">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="238.0" layoutY="4079.0" text="85">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="419.0" layoutY="4079.0" text="86">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg87" fitHeight="104.0" fitWidth="117.0" layoutX="622.0" layoutY="4084.0" />
+            <Label fx:id="nameBank87" contentDisplay="CENTER" layoutX="639.0" layoutY="4207.0" text="NamePokemon" />
+            <Label layoutX="596.0" layoutY="4078.0" text="87">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg88" fitHeight="104.0" fitWidth="117.0" layoutX="92.0" layoutY="4243.0" />
+            <Label fx:id="nameBank88" contentDisplay="CENTER" layoutX="109.0" layoutY="4366.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg89" fitHeight="104.0" fitWidth="117.0" layoutX="274.0" layoutY="4243.0" />
+            <Label fx:id="nameBank89" contentDisplay="CENTER" layoutX="291.0" layoutY="4366.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg90" fitHeight="104.0" fitWidth="117.0" layoutX="454.0" layoutY="4243.0" />
+            <Label fx:id="nameBank90" contentDisplay="CENTER" layoutX="471.0" layoutY="4366.0" text="NamePokemon" />
+            <Label layoutX="65.0" layoutY="4237.0" text="88">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="4237.0" text="89">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="428.0" layoutY="4237.0" text="90">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg91" fitHeight="104.0" fitWidth="117.0" layoutX="631.0" layoutY="4242.0" />
+            <Label fx:id="nameBank91" contentDisplay="CENTER" layoutX="648.0" layoutY="4365.0" text="NamePokemon" />
+            <Label layoutX="605.0" layoutY="4236.0" text="91">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg92" fitHeight="104.0" fitWidth="117.0" layoutX="92.0" layoutY="4401.0" />
+            <Label fx:id="nameBank92" contentDisplay="CENTER" layoutX="109.0" layoutY="4524.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg93" fitHeight="104.0" fitWidth="117.0" layoutX="274.0" layoutY="4401.0" />
+            <Label fx:id="nameBank93" contentDisplay="CENTER" layoutX="291.0" layoutY="4524.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg94" fitHeight="104.0" fitWidth="117.0" layoutX="454.0" layoutY="4401.0" />
+            <Label fx:id="nameBank94" contentDisplay="CENTER" layoutX="471.0" layoutY="4524.0" text="NamePokemon" />
+            <Label layoutX="65.0" layoutY="4395.0" text="92">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="4395.0" text="93">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="428.0" layoutY="4395.0" text="94">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg95" fitHeight="104.0" fitWidth="117.0" layoutX="631.0" layoutY="4400.0" />
+            <Label fx:id="nameBank95" contentDisplay="CENTER" layoutX="648.0" layoutY="4523.0" text="NamePokemon" />
+            <Label layoutX="605.0" layoutY="4394.0" text="95">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg96" fitHeight="104.0" fitWidth="117.0" layoutX="88.0" layoutY="4583.0" />
+            <Label fx:id="nameBank96" contentDisplay="CENTER" layoutX="105.0" layoutY="4706.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg97" fitHeight="104.0" fitWidth="117.0" layoutX="270.0" layoutY="4583.0" />
+            <Label fx:id="nameBank97" contentDisplay="CENTER" layoutX="287.0" layoutY="4706.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg98" fitHeight="104.0" fitWidth="117.0" layoutX="450.0" layoutY="4583.0" />
+            <Label fx:id="nameBank98" contentDisplay="CENTER" layoutX="467.0" layoutY="4706.0" text="NamePokemon" />
+            <Label layoutX="61.0" layoutY="4577.0" text="96">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="243.0" layoutY="4577.0" text="97">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="424.0" layoutY="4577.0" text="98">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg99" fitHeight="104.0" fitWidth="117.0" layoutX="627.0" layoutY="4582.0" />
+            <Label fx:id="nameBank99" contentDisplay="CENTER" layoutX="644.0" layoutY="4705.0" text="NamePokemon" />
+            <Label layoutX="601.0" layoutY="4576.0" text="99">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg100" fitHeight="104.0" fitWidth="117.0" layoutX="88.0" layoutY="4741.0" />
+            <Label fx:id="nameBank100" contentDisplay="CENTER" layoutX="105.0" layoutY="4864.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg101" fitHeight="104.0" fitWidth="117.0" layoutX="270.0" layoutY="4741.0" />
+            <Label fx:id="nameBank101" contentDisplay="CENTER" layoutX="287.0" layoutY="4864.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg102" fitHeight="104.0" fitWidth="117.0" layoutX="450.0" layoutY="4741.0" />
+            <Label fx:id="nameBank102" contentDisplay="CENTER" layoutX="467.0" layoutY="4864.0" text="NamePokemon" />
+            <Label layoutX="45.0" layoutY="4735.0" text="100">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="227.0" layoutY="4735.0" text="101">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="408.0" layoutY="4735.0" text="102">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg103" fitHeight="104.0" fitWidth="117.0" layoutX="627.0" layoutY="4740.0" />
+            <Label fx:id="nameBank103" contentDisplay="CENTER" layoutX="644.0" layoutY="4863.0" text="NamePokemon" />
+            <Label layoutX="585.0" layoutY="4734.0" text="103">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg116" fitHeight="104.0" fitWidth="117.0" layoutX="96.0" layoutY="5398.0" />
+            <Label fx:id="nameBank116" contentDisplay="CENTER" layoutX="113.0" layoutY="5521.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg117" fitHeight="104.0" fitWidth="117.0" layoutX="278.0" layoutY="5398.0" />
+            <Label fx:id="nameBank117" contentDisplay="CENTER" layoutX="295.0" layoutY="5521.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg118" fitHeight="104.0" fitWidth="117.0" layoutX="458.0" layoutY="5398.0" />
+            <Label fx:id="nameBank118" contentDisplay="CENTER" layoutX="475.0" layoutY="5521.0" text="NamePokemon" />
+            <Label layoutX="53.0" layoutY="5392.0" text="116">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="235.0" layoutY="5392.0" text="117">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="416.0" layoutY="5392.0" text="118">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg119" fitHeight="104.0" fitWidth="117.0" layoutX="635.0" layoutY="5397.0" />
+            <Label fx:id="nameBank119" contentDisplay="CENTER" layoutX="652.0" layoutY="5520.0" text="NamePokemon" />
+            <Label layoutX="593.0" layoutY="5391.0" text="119">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg104" fitHeight="104.0" fitWidth="117.0" layoutX="89.0" layoutY="4895.0" />
+            <Label fx:id="nameBank104" contentDisplay="CENTER" layoutX="106.0" layoutY="5018.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg105" fitHeight="104.0" fitWidth="117.0" layoutX="271.0" layoutY="4895.0" />
+            <Label fx:id="nameBank105" contentDisplay="CENTER" layoutX="288.0" layoutY="5018.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg106" fitHeight="104.0" fitWidth="117.0" layoutX="451.0" layoutY="4895.0" />
+            <Label fx:id="nameBank106" contentDisplay="CENTER" layoutX="468.0" layoutY="5018.0" text="NamePokemon" />
+            <Label layoutX="46.0" layoutY="4889.0" text="104">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="4889.0" text="105">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="4889.0" text="106">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg107" fitHeight="104.0" fitWidth="117.0" layoutX="628.0" layoutY="4894.0" />
+            <Label fx:id="nameBank107" contentDisplay="CENTER" layoutX="645.0" layoutY="5017.0" text="NamePokemon" />
+            <Label layoutX="586.0" layoutY="4888.0" text="107">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg108" fitHeight="104.0" fitWidth="117.0" layoutX="89.0" layoutY="5053.0" />
+            <Label fx:id="nameBank108" contentDisplay="CENTER" layoutX="106.0" layoutY="5176.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg109" fitHeight="104.0" fitWidth="117.0" layoutX="271.0" layoutY="5053.0" />
+            <Label fx:id="nameBank109" contentDisplay="CENTER" layoutX="288.0" layoutY="5176.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg110" fitHeight="104.0" fitWidth="117.0" layoutX="451.0" layoutY="5053.0" />
+            <Label fx:id="nameBank110" contentDisplay="CENTER" layoutX="468.0" layoutY="5176.0" text="NamePokemon" />
+            <Label layoutX="46.0" layoutY="5047.0" text="108">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="228.0" layoutY="5047.0" text="109">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="409.0" layoutY="5047.0" text="110">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg111" fitHeight="104.0" fitWidth="117.0" layoutX="628.0" layoutY="5052.0" />
+            <Label fx:id="nameBank111" contentDisplay="CENTER" layoutX="645.0" layoutY="5175.0" text="NamePokemon" />
+            <Label layoutX="586.0" layoutY="5046.0" text="111">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg112" fitHeight="104.0" fitWidth="117.0" layoutX="97.0" layoutY="5235.0" />
+            <Label fx:id="nameBank112" contentDisplay="CENTER" layoutX="114.0" layoutY="5358.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg113" fitHeight="104.0" fitWidth="117.0" layoutX="279.0" layoutY="5235.0" />
+            <Label fx:id="nameBank113" contentDisplay="CENTER" layoutX="296.0" layoutY="5358.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg114" fitHeight="104.0" fitWidth="117.0" layoutX="459.0" layoutY="5235.0" />
+            <Label fx:id="nameBank114" contentDisplay="CENTER" layoutX="476.0" layoutY="5358.0" text="NamePokemon" />
+            <Label layoutX="54.0" layoutY="5229.0" text="112">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="236.0" layoutY="5229.0" text="113">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="417.0" layoutY="5229.0" text="114">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg115" fitHeight="104.0" fitWidth="117.0" layoutX="636.0" layoutY="5234.0" />
+            <Label fx:id="nameBank115" contentDisplay="CENTER" layoutX="653.0" layoutY="5357.0" text="NamePokemon" />
+            <Label layoutX="594.0" layoutY="5228.0" text="115">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg120" fitHeight="104.0" fitWidth="117.0" layoutX="94.0" layoutY="5559.0" />
+            <Label fx:id="nameBank120" contentDisplay="CENTER" layoutX="111.0" layoutY="5682.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg121" fitHeight="104.0" fitWidth="117.0" layoutX="276.0" layoutY="5559.0" />
+            <Label fx:id="nameBank121" contentDisplay="CENTER" layoutX="293.0" layoutY="5682.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg122" fitHeight="104.0" fitWidth="117.0" layoutX="456.0" layoutY="5559.0" />
+            <Label fx:id="nameBank122" contentDisplay="CENTER" layoutX="473.0" layoutY="5682.0" text="NamePokemon" />
+            <Label layoutX="51.0" layoutY="5553.0" text="120">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="5553.0" text="121">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="414.0" layoutY="5553.0" text="122">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg123" fitHeight="104.0" fitWidth="117.0" layoutX="633.0" layoutY="5558.0" />
+            <Label fx:id="nameBank123" contentDisplay="CENTER" layoutX="650.0" layoutY="5681.0" text="NamePokemon" />
+            <Label layoutX="591.0" layoutY="5552.0" text="123">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg136" fitHeight="104.0" fitWidth="117.0" layoutX="102.0" layoutY="6216.0" />
+            <Label fx:id="nameBank136" contentDisplay="CENTER" layoutX="119.0" layoutY="6339.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg137" fitHeight="104.0" fitWidth="117.0" layoutX="284.0" layoutY="6216.0" />
+            <Label fx:id="nameBank137" contentDisplay="CENTER" layoutX="301.0" layoutY="6339.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg138" fitHeight="104.0" fitWidth="117.0" layoutX="464.0" layoutY="6216.0" />
+            <Label fx:id="nameBank138" contentDisplay="CENTER" layoutX="481.0" layoutY="6339.0" text="NamePokemon" />
+            <Label layoutX="59.0" layoutY="6210.0" text="136">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="241.0" layoutY="6210.0" text="137">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="422.0" layoutY="6210.0" text="138">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg139" fitHeight="104.0" fitWidth="117.0" layoutX="641.0" layoutY="6215.0" />
+            <Label fx:id="nameBank139" contentDisplay="CENTER" layoutX="658.0" layoutY="6338.0" text="NamePokemon" />
+            <Label layoutX="599.0" layoutY="6209.0" text="139">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg124" fitHeight="104.0" fitWidth="117.0" layoutX="95.0" layoutY="5713.0" />
+            <Label fx:id="nameBank124" contentDisplay="CENTER" layoutX="112.0" layoutY="5836.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg125" fitHeight="104.0" fitWidth="117.0" layoutX="277.0" layoutY="5713.0" />
+            <Label fx:id="nameBank125" contentDisplay="CENTER" layoutX="294.0" layoutY="5836.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg126" fitHeight="104.0" fitWidth="117.0" layoutX="457.0" layoutY="5713.0" />
+            <Label fx:id="nameBank126" contentDisplay="CENTER" layoutX="474.0" layoutY="5836.0" text="NamePokemon" />
+            <Label layoutX="52.0" layoutY="5707.0" text="124">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="234.0" layoutY="5707.0" text="125">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="415.0" layoutY="5707.0" text="126">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg127" fitHeight="104.0" fitWidth="117.0" layoutX="634.0" layoutY="5712.0" />
+            <Label fx:id="nameBank127" contentDisplay="CENTER" layoutX="651.0" layoutY="5835.0" text="NamePokemon" />
+            <Label layoutX="592.0" layoutY="5706.0" text="127">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg128" fitHeight="104.0" fitWidth="117.0" layoutX="95.0" layoutY="5871.0" />
+            <Label fx:id="nameBank128" contentDisplay="CENTER" layoutX="112.0" layoutY="5994.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg129" fitHeight="104.0" fitWidth="117.0" layoutX="277.0" layoutY="5871.0" />
+            <Label fx:id="nameBank129" contentDisplay="CENTER" layoutX="294.0" layoutY="5994.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg130" fitHeight="104.0" fitWidth="117.0" layoutX="457.0" layoutY="5871.0" />
+            <Label fx:id="nameBank130" contentDisplay="CENTER" layoutX="474.0" layoutY="5994.0" text="NamePokemon" />
+            <Label layoutX="52.0" layoutY="5865.0" text="128">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="234.0" layoutY="5865.0" text="129">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="415.0" layoutY="5865.0" text="130">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg131" fitHeight="104.0" fitWidth="117.0" layoutX="634.0" layoutY="5870.0" />
+            <Label fx:id="nameBank131" contentDisplay="CENTER" layoutX="651.0" layoutY="5993.0" text="NamePokemon" />
+            <Label layoutX="592.0" layoutY="5864.0" text="131">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg132" fitHeight="104.0" fitWidth="117.0" layoutX="103.0" layoutY="6053.0" />
+            <Label fx:id="nameBank132" contentDisplay="CENTER" layoutX="120.0" layoutY="6176.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg133" fitHeight="104.0" fitWidth="117.0" layoutX="285.0" layoutY="6053.0" />
+            <Label fx:id="nameBank133" contentDisplay="CENTER" layoutX="302.0" layoutY="6176.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg134" fitHeight="104.0" fitWidth="117.0" layoutX="465.0" layoutY="6053.0" />
+            <Label fx:id="nameBank134" contentDisplay="CENTER" layoutX="482.0" layoutY="6176.0" text="NamePokemon" />
+            <Label layoutX="60.0" layoutY="6047.0" text="132">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="6047.0" text="133">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="423.0" layoutY="6047.0" text="134">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg135" fitHeight="104.0" fitWidth="117.0" layoutX="642.0" layoutY="6052.0" />
+            <Label fx:id="nameBank135" contentDisplay="CENTER" layoutX="659.0" layoutY="6175.0" text="NamePokemon" />
+            <Label layoutX="600.0" layoutY="6046.0" text="135">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg148" fitHeight="104.0" fitWidth="117.0" layoutX="103.0" layoutY="6716.0" />
+            <Label fx:id="nameBank148" contentDisplay="CENTER" layoutX="120.0" layoutY="6839.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg149" fitHeight="104.0" fitWidth="117.0" layoutX="285.0" layoutY="6716.0" />
+            <Label fx:id="nameBank149" contentDisplay="CENTER" layoutX="302.0" layoutY="6839.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg150" fitHeight="104.0" fitWidth="117.0" layoutX="465.0" layoutY="6716.0" />
+            <Label fx:id="nameBank150" contentDisplay="CENTER" layoutX="482.0" layoutY="6839.0" text="NamePokemon" />
+            <Label layoutX="60.0" layoutY="6710.0" text="148">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="6710.0" text="149">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="423.0" layoutY="6710.0" text="150">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg140" fitHeight="104.0" fitWidth="117.0" layoutX="103.0" layoutY="6371.0" />
+            <Label fx:id="nameBank140" contentDisplay="CENTER" layoutX="120.0" layoutY="6494.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg141" fitHeight="104.0" fitWidth="117.0" layoutX="285.0" layoutY="6371.0" />
+            <Label fx:id="nameBank141" contentDisplay="CENTER" layoutX="302.0" layoutY="6494.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg142" fitHeight="104.0" fitWidth="117.0" layoutX="465.0" layoutY="6371.0" />
+            <Label fx:id="nameBank142" contentDisplay="CENTER" layoutX="482.0" layoutY="6494.0" text="NamePokemon" />
+            <Label layoutX="60.0" layoutY="6365.0" text="140">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="6365.0" text="141">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="423.0" layoutY="6365.0" text="142">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg143" fitHeight="104.0" fitWidth="117.0" layoutX="642.0" layoutY="6370.0" />
+            <Label fx:id="nameBank143" contentDisplay="CENTER" layoutX="659.0" layoutY="6493.0" text="NamePokemon" />
+            <Label layoutX="600.0" layoutY="6364.0" text="143">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg144" fitHeight="104.0" fitWidth="117.0" layoutX="104.0" layoutY="6553.0" />
+            <Label fx:id="nameBank144" contentDisplay="CENTER" layoutX="121.0" layoutY="6676.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg145" fitHeight="104.0" fitWidth="117.0" layoutX="286.0" layoutY="6553.0" />
+            <Label fx:id="nameBank145" contentDisplay="CENTER" layoutX="303.0" layoutY="6676.0" text="NamePokemon" />
+            <ImageView fx:id="bankImg146" fitHeight="104.0" fitWidth="117.0" layoutX="466.0" layoutY="6553.0" />
+            <Label fx:id="nameBank146" contentDisplay="CENTER" layoutX="483.0" layoutY="6676.0" text="NamePokemon" />
+            <Label layoutX="61.0" layoutY="6547.0" text="144">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="243.0" layoutY="6547.0" text="145">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="424.0" layoutY="6547.0" text="146">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="bankImg147" fitHeight="104.0" fitWidth="117.0" layoutX="643.0" layoutY="6552.0" />
+            <Label fx:id="nameBank147" contentDisplay="CENTER" layoutX="660.0" layoutY="6675.0" text="NamePokemon" />
+            <Label layoutX="601.0" layoutY="6546.0" text="147">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="32.0" />
+               </font>
+            </Label>
+            <Button fx:id="replace" layoutX="133.0" layoutY="478.0" mnemonicParsing="false" onAction="#replace" prefHeight="34.0" prefWidth="107.0" style="-fx-background-color: #9D69D7;" text="REPLACE" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font></Button>
+            <Button fx:id="searchButton" layoutX="617.0" layoutY="477.0" mnemonicParsing="false" onAction="#searchButtonAction" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #9D69D7;" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font></Button>
+            <TextField fx:id="searchTextField" layoutX="518.0" layoutY="481.0" prefHeight="26.0" prefWidth="54.0" />
+            <TextField fx:id="replaceBelt" layoutX="59.0" layoutY="483.0" prefHeight="26.0" prefWidth="54.0" />
+            <TextField fx:id="replaceBank" layoutX="255.0" layoutY="481.0" prefHeight="26.0" prefWidth="54.0" />
+            <Group fx:id="thatOneIsAlreadYInBelt" layoutX="110.0" layoutY="111.0" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbde7" height="259.0" stroke="#5f175f" strokeType="INSIDE" width="574.0" />
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="64.0" prefHeight="82.0" prefWidth="562.0" text="That one is already in the Belt" textFill="#64114f">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="pokeAlreadyInBelt" layoutX="238.0" layoutY="179.0" mnemonicParsing="false" onAction="#pokeAlreadyInBeltButtton" prefHeight="45.0" prefWidth="85.0" style="-fx-background-color: #51376F;" text="OK" textFill="WHITE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="23.0" />
+                     </font></Button>
+               </children>
+            </Group>
+            <Group fx:id="writeCorrectNumbersGroup" layoutX="136.0" layoutY="167.0" visible="false">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c7ffba" height="200.0" stroke="#386431" strokeType="INSIDE" width="478.0" />
+                  <Label layoutX="36.0" layoutY="52.0" text="Write The Correct Numbers">
+                     <font>
+                        <Font name="Comic Sans MS" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="pokeAlreadyInBelt1" layoutX="193.0" layoutY="128.0" mnemonicParsing="false" onAction="#pokeAlreadyInBeltButtton" prefHeight="45.0" prefWidth="85.0" style="-fx-background-color: #52B148;" text="OK">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Button>
+               </children>
+            </Group>
+            <Label alignment="CENTER" layoutX="43.0" layoutY="451.0" prefHeight="34.0" prefWidth="87.0" text="#Belt">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="239.0" layoutY="451.0" prefHeight="34.0" prefWidth="87.0" text="#Bank">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="502.0" layoutY="454.0" prefHeight="34.0" prefWidth="87.0" text="#Bank">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="positionBeltButton" layoutX="672.0" layoutY="208.0" mnemonicParsing="false" onAction="#positionBeltButton" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: #9D69D7;" text="Change Positions of belt" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
